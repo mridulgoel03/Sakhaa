@@ -12,7 +12,7 @@ def speak(text):
     engine.say(text)
     engine.runAndWait()
 
-openai.api_key = "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"
+openai.api_key = "Enter your key here"
 model_engine = "text-davinci-002"
 
 r = sr.Recognizer()
@@ -55,61 +55,3 @@ if __name__ == "__main__":
                 speak("I couldn't understand your voice. Can you say that again?")
                 print("Unrecognized Voice. Say that again please.")
 
-
-# import openai
-# import speech_recognition as sr
-# import pyttsx3
-
-# openai.api_key = "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"
-
-# def generate_response(prompt):
-#     response = openai.Completion.create(
-#         engine="text-davinci-002",
-#         prompt=prompt,
-#         max_tokens=1024,
-#         n=1,
-#         stop=None,
-#         temperature=0.5,
-#         languages=["en", "hi"],
-#     )
-#     return response.choices[0].text
-
-# def listen_for_speech():
-#     recognizer = sr.Recognizer()
-#     microphone = sr.Microphone()
-#     with microphone as source:
-#         recognizer.adjust_for_ambient_noise(source)
-#         audio = recognizer.listen(source)
-#     return recognizer.recognize_google(audio)
-
-# def speak_text(text):
-#     engine = pyttsx3.init()
-#     engine.say(text)
-#     engine.runAndWait()
-
-# while True:
-#     print("Listening for speech...")
-#     prompt = listen_for_speech()
-#     response = generate_response(prompt)
-#     print("Chatbot: " + response)
-#     speak_text("Chatbot: " + response)
-
-# import openai
-
-# openai.api_key = "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"
-
-# def generate_response(prompt):
-#     response = openai.Completion.create(
-#         engine="text-davinci-002",
-#         prompt=prompt,
-#         max_tokens=1024,
-#         n=1,
-#         stop=None,
-#         temperature=0.5,
-#     )
-#     return response.choices[0].text
-
-# while True:
-#     prompt = input("You: ")
-#     response = generate_response(prompt)
-#     print("Chatbot: " + response)
