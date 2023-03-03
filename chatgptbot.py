@@ -43,10 +43,6 @@ if __name__ == "__main__":
                     speak("Opening Wikipedia....")
                     print("Opening Wikipedia....")
                     webbrowser.open("https://wikipedia.org/")
-                elif "discord" in command.lower():
-                    speak("Opening Discord....")
-                    print("Opening Discord....")
-                    os.startfile("C:/Users/Kunal/AppData/Local/Discord/Update.exe")
                 elif "close" in command.lower():
                     speak("Stopping Program....")
                     print("Stopping Program....")
