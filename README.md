@@ -9,7 +9,7 @@ To use the program, run the start() function in the main.py file. This will laun
 
 After the window has closed, the program will listen for voice commands. The user can say "listen to music", "write in my diary", "talk to Sakha", or "exit". If the user says "listen to music", the program will play a song based on the mood stored in the chosen_emotion.txt file. If the user says "write in my diary", the program will open a text file where the user can write a diary entry. If the user says "talk to Sakha", the program will use the OpenAI API to generate a response to the user's query. If the user says "exit", the program will stop running.
 
-File Structure
+<h2><b>File Structure</b></h2>
 <li>main.py: the main program file that launches the GUI and listens for voice commands</li>
 <li>chatgptbot.py: the file that handles the OpenAI API and generates responses to user queries</li>
 <li>dairy.py: the file that opens a text file where the user can write a diary entry</li>
