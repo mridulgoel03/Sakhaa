@@ -16,7 +16,8 @@ After the window has closed, the program will listen for voice commands. The use
 <li>song1.py: the file that plays a song based on the mood stored in chosen_emotion.txt</li>
 <li>chosen_emotion.txt: a text file that stores the user's chosen mood for playing a song
 </li>
-</h2>Dependencies</h2>
+<h2><b>Dependencies</b></h2>
+
 <li>tkinter</li>
 <li>subprocess</li>
 <li>os</li>
