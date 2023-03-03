@@ -8,7 +8,7 @@ The program uses several Python libraries, including tkinter, subprocess, os, py
 To use the program, run the start() function in the main.py file. This will launch a graphical user interface with an image of Sakha. The window will close automatically after 3 seconds.
 
 <h4>After the window has closed, the program will listen for voice commands.</h4>
-The user can say <b>"listen to music", <b>"write in my diary"</b>, <b>"talk to Sakha"</b>, or <b>"exit"</b>. If the user says <b>"listen to music"</b>, the program will play a song based on the mood stored in the <b>chosen_emotion.txt file</b>. If the user says <b>"write in my diary"</b>, the program will open a text file where the user can write a diary entry. If the user says <b>"talk to Sakha"</b>, the program will use the OpenAI API to generate a response to the user's query. If the user says <b>"exit"</b>, the program will stop running.
+The user can say <b>"listen to music"</b>, <b>"write in my diary"</b>, <b>"talk to Sakha"</b>, or <b>"exit"</b>. If the user says <b>"listen to music"</b>, the program will play a song based on the mood stored in the <b>chosen_emotion.txt file</b>. If the user says <b>"write in my diary"</b>, the program will open a text file where the user can write a diary entry. If the user says <b>"talk to Sakha"</b>, the program will use the OpenAI API to generate a response to the user's query. If the user says <b>"exit"</b>, the program will stop running.
 
 <h2><b>File Structure</b></h2>
 <li>main.py: the main program file that launches the GUI and listens for voice commands</li>
