@@ -1,29 +1,75 @@
-# Sakhaa
-<h1>Sakhaa your Ai friend</h1>
-This code is a chatbot program called "Sakha" that can listen to voice commands and perform tasks such as playing music, writing in a diary, talking to the user, and answering questions.
+# Sakhaa: Your AI Friend
 
-The program uses several Python libraries, including tkinter, subprocess, os, pyttsx3, speech_recognition, webbrowser, and pygame. It also uses the OpenAI API for generating responses to user queries.
+Sakhaa is a chatbot program that listens to voice commands and performs various tasks such as playing music, writing in a diary, talking to the user, and answering questions. It leverages several Python libraries and the OpenAI API to enhance user interaction.
 
-<h3>How to use</h3>
-To use the program, run the start() function in the main.py file. This will launch a graphical user interface with an image of Sakha. The window will close automatically after 3 seconds.
+## Features
 
-<h4>After the window has closed, the program will listen for voice commands.</h4>
-The user can say <b>"listen to music"</b>, <b>"write in my diary"</b>, <b>"talk to Sakha"</b>, or <b>"exit"</b>. If the user says <b>"listen to music"</b>, the program will play a song based on the mood stored in the <b>chosen_emotion.txt file</b>. If the user says <b>"write in my diary"</b>, the program will open a text file where the user can write a diary entry. If the user says <b>"talk to Sakha"</b>, the program will use the OpenAI API to generate a response to the user's query. If the user says <b>"exit"</b>, the program will stop running.
+- **Voice Command Recognition**: Responds to specific voice commands.
+- **Music Playback**: Plays a song based on the mood stored in `chosen_emotion.txt`.
+- **Diary Entry**: Allows users to write diary entries.
+- **Chat with Sakhaa**: Generates responses to user queries using the OpenAI API.
+- **Exit Command**: Gracefully terminates the program.
 
-<h2><b>File Structure</b></h2>
-<li>main.py: the main program file that launches the GUI and listens for voice commands</li>
-<li>chatgptbot.py: the file that handles the OpenAI API and generates responses to user queries</li>
-<li>dairy.py: the file that opens a text file where the user can write a diary entry</li>
-<li>song1.py: the file that plays a song based on the mood stored in chosen_emotion.txt</li>
-<li>chosen_emotion.txt: a text file that stores the user's chosen mood for playing a song
-</li>
-<h2><b>Dependencies</b></h2>
+## How to Use
 
-<li>tkinter</li>
-<li>subprocess</li>
-<li>os</li>
-<li>pyttsx3</li>
-<li>speech_recognition</li>
-<li>webbrowser</li>
-<li>pygame</li>
-<li>openai</li>
+1. **Run the Program**: Execute the `start()` function in the `main.py` file. This will launch a graphical user interface (GUI) with an image of Sakhaa. 
+2. **Automatic Closure**: The GUI window will automatically close after 3 seconds.
+3. **Voice Commands**: After the window closes, the program will listen for voice commands. You can say:
+   - **"listen to music"**: Plays a song based on your mood.
+   - **"write in my diary"**: Opens a text file for diary entries.
+   - **"talk to Sakha"**: Engages with the OpenAI API for responses.
+   - **"exit"**: Stops the program.
+
+
+## File Structure
+
+```
+- `main.py`              # Main program file that launches the GUI and listens for voice commands
+- `chatgptbot.py`        # Handles OpenAI API and generates responses to user queries
+- `diary.py`             # Opens a text file for writing diary entries
+- `song1.py`             # Plays a song based on the mood stored in `chosen_emotion.txt`
+- `chosen_emotion.txt`    # Stores the user's chosen mood for playing a song
+```
+
+
+## Dependencies
+
+To run `Sakhaa`, ensure you have the following Python libraries installed:
+
+- `tkinter`
+- `subprocess`
+- `os`
+- `pyttsx3`
+- `speech_recognition`
+- `webbrowser`
+- `pygame`
+- `openai`
+
+## Installation
+
+To install the dependencies, you can use pip:
+
+```bash
+pip install tkinter pyttsx3 SpeechRecognition pygame openai
+```
+
+## Contributing
+
+If you would like to contribute to `Sakhaa`, follow these steps:
+
+1. **Fork the repository**: Click on the "Fork" button at the top right corner of the page.
+2. **Create your feature branch**: 
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. **Commit your changes**: 
+   ```bash
+   git commit -m "Add some feature"
+   ```
+4. **Push to the branch**: 
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+5. **Open a pull request**: Go to the original repository and click on the "Pull Requests" tab, then click on "New Pull Request."
+
+Your contributions are welcome! Whether it’s fixing bugs, improving documentation, or adding features, every bit helps!
