@@ -23,13 +23,14 @@ Sakhaa is a chatbot program that listens to voice commands and performs various 
 
 ## File Structure
 
-```
+
 - `main.py`              # Main program file that launches the GUI and listens for voice commands
 - `chatgptbot.py`        # Handles OpenAI API and generates responses to user queries
 - `diary.py`             # Opens a text file for writing diary entries
 - `song1.py`             # Plays a song based on the mood stored in `chosen_emotion.txt`
 - `chosen_emotion.txt`    # Stores the user's chosen mood for playing a song
-```
+
+
 
 
 ## Dependencies
